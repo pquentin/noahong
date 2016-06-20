@@ -10,7 +10,9 @@ noaho_module = Extension(
       'src/array-aho.cpp'],
     depends=[
         'src/array-aho.h',
-        'src/noahong.pyx']
+        'src/noahong.pyx'],
+    extra_compile_args=["-std=c++11"],
+    extra_link_args=["-std=c++11"],
 )
 
 version = '0.9.7'
